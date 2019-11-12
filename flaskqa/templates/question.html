@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block title %}Question{% endblock %}
+
+{% block content %}
+<div class="jumbotron">
+        <h1>{{ question.question }}</h1>
+        <h2>{{ question.answer }}</h2>
+        <p>{{ question.justification }}</p>
+        <p><a class="btn btn-primary btn-md">Asked By: {{ question.asker.name }}</a></p>
+        <p><a class="btn btn-primary btn-md">Answered By: {{ question.expert.name }}</a></p>
+        <p><a class="btn btn-primary btn-sm">NIST ID: {{ question.nist_id }}</a></p>
+        <p><a class="btn btn-primary btn-sm">NIST Function: {{ question.nist_function }}</a></p>
+      </div>
+{% endblock %}
