@@ -1,3 +1,3 @@
 FLASK_ENV=development
-FLASK_APP=flask_qa
+FLASK_APP=flaskqa
 
