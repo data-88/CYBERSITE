@@ -1,5 +1,3 @@
 FLASK_ENV=development
-FLASK_APP=app
-TESTING = True
-DEBUG = True
+FLASK_APP=flask_qa
 
