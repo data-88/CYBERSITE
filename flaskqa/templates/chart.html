@@ -11,7 +11,7 @@ var myChart = new Chart(ctx, {
     data: {
         labels : ["Identify", "Detect", "Protect", "Respond", "Recover"],
         datasets: [{
-            label: 'Average',
+            label: 'Averages',
             data: {{ values }},
             backgroundColor: [
                 'rgba(0, 176, 240, 0.2)',
@@ -38,13 +38,14 @@ var myChart = new Chart(ctx, {
         scale: {
             gridLines: {
             color: 'rgba(201, 201, 201, 0.1)',
-            lineWidth: 3
+            lineWidth: 2
             },
-            yAxes: [{
-                ticks: {
-                    beginAtZero: true
-                }
-            }]
+            ticks: {
+                beginAtZero: true,
+                max: 5,
+                min: 0,
+                stepSize: 1
+            }
         },
     legend: {
         defaultfontSize: "60",
