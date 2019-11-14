@@ -9,7 +9,7 @@ def create_app(config_file='settings.py'):
     app = Flask(__name__)
 
     app.config.from_pyfile(config_file)
-    app.secret_key = b'\x10\x06@.\xcb\xac\xdb\xa7\xe8\x8d\xedi\x80O\ta.\xcc\x8a\x03&\x10C&'
+    # app.secret_key = b'\x10\x06@.\xcb\xac\xdb\xa7\xe8\x8d\xedi\x80O\ta.\xcc\x8a\x03&\x10C&'
 
     db.init_app(app)
 
