@@ -130,6 +130,9 @@ def chart():
     Respond = Question.query.with_entities(func.avg(Question.answer)).filter_by(nist_function="RS").scalar() 
     Recover = Question.query.with_entities(func.avg(Question.answer)).filter_by(nist_function="RC").scalar() 
 
+    # for n in nist_function:
+    #     question.query.with_entities(func.avg(Question.answer)).filter_by(nist_function="label").scalar()
+
     values = [Identify,Protect,Detect,Respond,Recover]
 
     context = {
