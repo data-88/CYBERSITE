@@ -12,7 +12,9 @@ var myChart = new Chart(ctx, {
         labels : ["Identify", "Detect", "Protect", "Respond", "Recover"],
         datasets: [{
             label: 'Averages',
-            data: {{ tojson(values) }},
+            data: {% for value in values -%}
+            {{ value }}
+            {% endfor -%},
             backgroundColor: [
                 'rgba(0, 176, 240, 0.2)',
                 'rgba(0, 176, 240, 0.2)',
