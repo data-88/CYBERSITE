@@ -3,8 +3,8 @@
 
 {% block content %}
 <div class="jumbotron">
-        <h1>{{ question.question }}</h1>
-        <h2>Tier: {{ question.answer }}</h2>
+        <h2>{{ question.question }}</h2>
+        <h3>Tier: {{ question.answer }}</h3>
         <p>{{ question.justification }}</p>
         <p><a class="btn btn-primary btn-md">Asked By: {{ question.asker.name }}</a></p>
         <p><a class="btn btn-primary btn-md">Answered By: {{ question.expert.name }}</a></p>
