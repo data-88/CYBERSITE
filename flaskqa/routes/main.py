@@ -16,7 +16,7 @@ def index():
         context = {
             'questions' : questions
         }
-        return render_template('home.html', **context)
+        return render_template('answers.html', **context)
     else:
         return render_template('landing.html')
 
