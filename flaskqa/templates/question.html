@@ -6,9 +6,9 @@
         <h2>{{ question.question }}</h2>
         <h3>Tier: {{ question.answer }}</h3>
         <p>{{ question.justification }}</p>
-        <p><a class="btn btn-secondary btn-md">Asked By: {{ question.asker.name }}</a></p>
-        <p><a class="btn btn-secondary btn-md">Answered By: {{ question.expert.name }}</a></p>
-        <p><a class="btn btn-secondary btn-sm">NIST ID: {{ question.nist_id }}</a></p>
-        <p><a class="btn btn-secondary btn-sm">NIST Function: {{ question.nist_function }}</a></p>
+        <p><a class="btn btn-light btn-md">Asked By: {{ question.asker.name }}</a></p>
+        <p><a class="btn btn-light btn-md">Answered By: {{ question.expert.name }}</a></p>
+        <p><a class="btn btn-light btn-sm">NIST ID: {{ question.nist_id }}</a></p>
+        <p><a class="btn btn-light btn-sm">NIST Function: {{ question.nist_function }}</a></p>
       </div>
 {% endblock %}
