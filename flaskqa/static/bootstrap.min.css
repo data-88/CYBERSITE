@@ -1713,7 +1713,7 @@ mark,
 
 a.text-primary:hover,
 a.text-primary:focus {
-    color: #b15315
+    color: #004d8e
 }
 
 .text-success {
@@ -4214,7 +4214,7 @@ fieldset[disabled] .btn-info.focus {
 .btn-warning.active.focus,
 .open>.dropdown-toggle.btn-warning.focus {
     color: #ffffff;
-    background-color: #d58512;
+    background-color: #00b0f0;
     border-color: rgba(0, 0, 0, 0)
 }
 
@@ -6079,7 +6079,7 @@ a.label:focus {
 
 .label-primary[href]:hover,
 .label-primary[href]:focus {
-    background-color: #b15315
+    background-color: #004d8e
 }
 
 .label-success {
