@@ -11,18 +11,18 @@ var myChart = new Chart(ctx, {
     data: {
         labels : ["Identify", "Detect", "Protect", "Respond", "Recover"],
         datasets: [{
-            label: 'Averages',
+            label: 'Average',
             data: [{% for value in values -%}{{ value }},{% endfor -%}],
             backgroundColor: [
                 'rgba(0, 176, 240, 0.2)',
-                'rgba(0, 176, 240, 0.2)',
-                'rgba(255, 206, 86, 0.2)',
+                'rgba(, 176, 140, 0.2)',
+                'rgba(255, 106, 86, 0.2)',
                 'rgba(75, 192, 192, 0.2)',
                 'rgba(153, 102, 255, 0.2)',
                 'rgba(255, 159, 64, 0.2)'
             ],
             color: [
-                'rgba(255, 255, 0, 1)'
+                'rgba(255, 25, 0, 1)'
             ],
             borderColor: [
                 'rgba(255, 255, 255, 1)',
@@ -32,13 +32,16 @@ var myChart = new Chart(ctx, {
                 'rgba(153, 102, 255, 1)',
                 'rgba(255, 159, 64, 1)'
             ]
-        }]
+        }],
     },
     options: {
         scale: {
+            pointLabels: {
+                fontSize: 20
+            },
             gridLines: {
-            color: 'rgba(201, 201, 201, 0.1)',
-            lineWidth: 2
+                color: 'rgba(201, 201, 201, 0.1)',
+                lineWidth: 2
             },
             ticks: {
                 beginAtZero: true,
