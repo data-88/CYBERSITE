@@ -11,7 +11,7 @@ var myChart = new Chart(ctx, {
     data: {
         labels : ["Identify", "Detect", "Protect", "Respond", "Recover"],
         datasets: [{
-            label: 'Average',
+            label: 'Current',
             data: [{% for value in values -%}{{ value }},{% endfor -%}],
             backgroundColor: [
                 'rgba(0, 176, 240, 0.4)',
