@@ -42,7 +42,7 @@
             <li><a href="{{ url_for('main.ask') }}">Ask Question</a></li>
             {% endif %} -->
             {% if current_user.is_authenticated and current_user.admin %}
-              <li class="nav-link"><a class="text-white" href="{{ url_for('main.users') }}">User</a></li>
+              <li class="nav-link"><a class="text-white" href="{{ url_for('main.users') }}">Users</a></li>
             {% endif %}
             {% if current_user.is_authenticated %}
               <li class="nav-link"><a class="text-white" href="{{ url_for('auth.logout') }}">Logout</a></li>

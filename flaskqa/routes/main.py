@@ -103,6 +103,10 @@ def unanswered():
 
     return render_template('unanswered.html', **context)
 
+@main.route('/about')
+def about():
+    return render_template('about.html')
+
 @main.route('/users')
 @login_required
 def users():
