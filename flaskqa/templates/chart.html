@@ -14,7 +14,7 @@ var myChart = new Chart(ctx, {
             label: 'Average',
             data: [{% for value in values -%}{{ value }},{% endfor -%}],
             backgroundColor: [
-                'rgba(0, 176, 240, 0.2)',
+                'rgba(0, 176, 240, 0.4)',
                 'rgba(, 176, 140, 0.2)',
                 'rgba(255, 106, 86, 0.2)',
                 'rgba(75, 192, 192, 0.2)',
@@ -37,11 +37,11 @@ var myChart = new Chart(ctx, {
     options: {
         scale: {
             pointLabels: {
-                fontSize: 20
+                fontSize: 14
             },
             gridLines: {
                 color: 'rgba(201, 201, 201, 0.1)',
-                lineWidth: 2
+                lineWidth: 2.2
             },
             ticks: {
                 beginAtZero: true,

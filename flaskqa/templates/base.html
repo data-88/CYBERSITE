@@ -13,9 +13,9 @@
     <link rel="shortcut icon" sizes="32x32" href="{{ url_for('static', filename='favicon.ico') }}">
   </head>
 
-  <body>
+  <body class="bg-dark">
   
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
+        <nav class="navbar navbar-expand-md navbar-dark bg-secondary mb-4">
       <div class="container">
         <div class="navbar-header">
         <a class="navbar-brand" href="#">Oversight</a>
@@ -26,26 +26,26 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             {% if current_user.is_authenticated %}
-              <li class="nav-link"><a href="{{ url_for('main.chart') }}">Profile </a></li>
+              <li class="nav-link"><a class="text-white" href="{{ url_for('main.chart') }}">Profile </a></li>
             {% endif %}
             {% if current_user.is_authenticated and current_user.expert %}
-              <li class="nav-link"><a href="{{ url_for('main.unanswered') }}">Questions</a></li>
+              <li class="nav-link"><a class="text-white" href="{{ url_for('main.unanswered') }}">Questions</a></li>
             {% endif %}
             {% if current_user.is_authenticated %}
-              <li class="nav-link"><a href="{{ url_for('main.index') }}">Answers</a></li>
+              <li class="nav-link"><a class="text-white" href="{{ url_for('main.index') }}">Answers</a></li>
             {% endif %}
             {% if not current_user.is_authenticated %}
-              <li class="nav-link"><a href="{{ url_for('auth.login') }}">Login</a></li>
-              <li class="nav-link"><a href="{{ url_for('auth.register') }}">Register</a></li>
+              <li class="nav-link"><a class="text-white" href="{{ url_for('auth.login') }}">Login</a></li>
+              <li class="nav-link"><a class="text-white" href="{{ url_for('auth.register') }}">Register</a></li>
             {% endif %}
             <!-- {% if current_user.is_authenticated %}
             <li><a href="{{ url_for('main.ask') }}">Ask Question</a></li>
             {% endif %} -->
             {% if current_user.is_authenticated and current_user.admin %}
-              <li class="nav-link"><a href="{{ url_for('main.users') }}">User</a></li>
+              <li class="nav-link"><a class="text-white" href="{{ url_for('main.users') }}">User</a></li>
             {% endif %}
             {% if current_user.is_authenticated %}
-              <li class="nav-link"><a href="{{ url_for('auth.logout') }}">Logout</a></li>
+              <li class="nav-link"><a class="text-white" href="{{ url_for('auth.logout') }}">Logout</a></li>
             {% endif %}
           </ul>
         </div>
