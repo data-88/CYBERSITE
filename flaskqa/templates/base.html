@@ -35,6 +35,7 @@
               <li class="nav-link"><a class="text-white" href="{{ url_for('main.index') }}">Answers</a></li>
             {% endif %}
             {% if not current_user.is_authenticated %}
+              <li class="nav-link"><a class="text-white" href="{{ url_for('main.about') }}">About</a></li>
               <li class="nav-link"><a class="text-white" href="{{ url_for('auth.login') }}">Login</a></li>
               <li class="nav-link"><a class="text-white" href="{{ url_for('auth.register') }}">Register</a></li>
             {% endif %}
