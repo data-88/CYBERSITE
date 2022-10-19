@@ -1,7 +1,6 @@
-# oversight
+# Overview
 
-Oversight is the app for Risk and Assessments
+This is a cybersecurity assessment app based on NIST for Risk Assessments
 
-It also has an Admin panel
+Add users and subject matter experts per domain on the Admin page
 
-Currently loaded with NIST questions for cyber security
